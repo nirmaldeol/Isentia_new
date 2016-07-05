@@ -1,11 +1,12 @@
-To check this code:
 
-Run NPM install
-Run bower install
-run gulp
-Server with serve files at http://localhost:2772/
+# To check this code:
 
-I will upload this to Heroku in Few Days for live demo.
+- Run NPM install
+- Run bower install
+- run gulp
+- Server with serve files at http://localhost:2772/
+
+-I will upload this to Heroku in Few Days for live demo.
 
 
 
