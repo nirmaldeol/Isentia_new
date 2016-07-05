@@ -1,0 +1,39 @@
+{
+  "name": "isentia-chalenge",
+  "version": "0.1.0",
+  "description": "Challenge App",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirmaldeol/challenge.git"
+  },
+  "author": "Nirmal Deol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirmaldeol/challenge/issues"
+  },
+  "homepage": "https://github.com/nirmaldeol/challenge#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "protractor": "^3.2.2"
+  }
+}
