@@ -1,0 +1,27 @@
+{
+  "name": "isentia-chalenge",
+  "description": "Challenge App",
+  "main": "index.js",
+  "authors": [
+    "Nirmal Deol"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Isentia"
+  ],
+  "homepage": "https://github.com/nirmaldeol/challenge",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.7",
+    "angular-mocks": "~1.5.0"
+  }
+}
