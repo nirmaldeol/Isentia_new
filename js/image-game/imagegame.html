@@ -1,0 +1,9 @@
+<div class="row">
+     <div class="col-sm-4 col-md-4 col-lg-4">
+          <img  id = "image" src="img/isentia.jpg" alt="Isentia JPG">
+          <button id="game-btn" type="button" ng-click="$ctrl.restart()"class="center-block btn btn-lg btn-success ">Restart Game</button>
+     </div>
+        <div class="col-sm-8 col-md-8 col-lg-8" >
+            <canvas id="canvas" width="400" height="400" ng-mousedown="$ctrl.mousedown($event)" ng-mouseup="$ctrl.mouseup($event)"></canvas>
+        </div> 
+    </div>  

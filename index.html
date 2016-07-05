@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Isentia App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body ng-app="gameApp" ng-controller="MainController as vm">
+
+    <div class="container">
+      <div class="panel panel-info">
+        <!-- Default panel contents -->
+        <div id="min-width-panel" class="panel-heading">
+          <!--  This Message will shown only when Game Ends-->
+          <p ng-show="vm.message" ng-cloak class="text-center">       Congratulations!,you solved the puzzle in a total of {{vm.totalMoves}} moves.
+          </p>
+        </div>
+        <!--  Panel body containes Explainnation and Image game component for game-->
+        <div class="panel-body">
+          <section class="row">
+            <p><h3 class="text-center" >Drag and drop the images on right to match the given image</h3></p>
+            <image-game rows="3" columns="3" image-src="../img/isentia.jpg" on-completed="vm.gameCompleted(totalMoves, message)">
+            </image-game>
+          </section>
+          <!--  Shows total moves at given time for game-->
+          <section class="row">
+          <article class="text-center" id="moves-size" ng-cloak> Total Moves:{{vm.totalMoves}}</article>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+ 
+  
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!-- Add your site or application content here -->
+  
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+  <!--  This is to help with console errors with browser who does not have chrome like ocnsole.-->
+  <script src="js/vendor/plugins.js"></script>
+  <script src="/js/vendor/jquery-ui.min.js" type="text/javascript" charset="utf-8" ></script>
+  <script src="/bower/angular/angular.min.js"></script>
+  <script src="js/image-game/image-game.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>
